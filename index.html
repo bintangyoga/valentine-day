@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <canvas></canvas>
+    <h1>Happy Valentine's Day <b id="name"></b> !</h1>
+    <script>
+        const url = new URL(window.location.href);
+        const name = url.searchParams.get("name");
+        document.getElementById('name').innerHTML = name;
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
